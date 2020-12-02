@@ -347,7 +347,8 @@ class VideoPlayerOptions {
   /// Set this to true to mix the video players audio with other audio sources.
   /// The default value is false
   final bool mixWithOthers;
+  final bool observeAppLifecycle;
 
   /// set additional optional player settings
-  VideoPlayerOptions({this.mixWithOthers = false});
+  VideoPlayerOptions({this.mixWithOthers = false, this.observeAppLifecycle = true});
 }
